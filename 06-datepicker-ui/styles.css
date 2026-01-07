@@ -1,0 +1,107 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#app {
+    width: 300px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.header-calendar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+.calendar-body {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+.pick-date-input {
+    width: 250px;
+    font-size: 1.2rem;
+    border: none;
+}
+.calendar-button {
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-image: url("public/calendar.png");
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.month-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.left-month-btn, .right-month-btn, .center-month-btn {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+}
+.left-month-btn {
+    background-image: url("public/right-arrow.png");
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+.right-month-btn {
+    background-image: url("public/right-arrow.png");
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.days-week-container {
+    display: grid;
+    grid-template-columns: repeat(7, 41px);
+    gap: 2px;
+}
+
+.days-container {
+    display: grid;
+    grid-template-columns: repeat(7, 41px);
+    grid-template-rows: repeat(5, 41px);
+    gap: 2px;
+}
+.day-btn, .day-week {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
