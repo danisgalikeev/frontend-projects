@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form Template</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="form-container">
+    <form action="/submit-endpoint" method="POST" novalidate>
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    aria-required="true"
+                    aria-describedby="name-error"
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    aria-required="true"
+                    aria-describedby="email-error"
+                    autocomplete="email"
+            />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Enter Password</label>
+
+            <div class="password-row">
+                <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                        aria-required="true"
+                        aria-describedby="password-error password-visibility-status"
+                        autocomplete="new-password"
+                />
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="password-confirm">Confirm Password</label>
+            <input
+                    type="password"
+                    id="password-confirm"
+                    name="password-confirm"
+                    required
+                    aria-required="true"
+                    aria-describedby="password-confirm-error"
+                    autocomplete="new-password"
+            />
+        </div>
+
+        <div class="completion-info-container" aria-label="Onboarding progress">
+            <span class="completed-task">Create Account</span>
+            <span class="completed-task">Update Roadmap Progress</span>
+            <span class="completed-task">Setup Public Profile</span>
+            <span>Complete your first project</span>
+            <span>Invite your friends</span>
+
+            <div class="progress-container" role="group" aria-label="Profile completion">
+                <span class="progress-text">50%</span>
+                <div
+                        class="progress"
+                        role="progressbar"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="50"
+                        aria-label="Profile completion"
+                >
+                    <div id="progress-bar-1" style="width: 50%"></div>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">Update Profile</button>
+    </form>
+</div>
+
+</body>
+</html>

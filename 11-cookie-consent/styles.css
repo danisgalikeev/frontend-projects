@@ -1,0 +1,57 @@
+:root {
+    --cookie-padding: 20px;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cookie-container {
+    position: absolute;
+    bottom: var(--cookie-padding);
+    right: var(--cookie-padding);
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+    row-gap: 17px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+.close-button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    background-image: url("public/close.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.cookie-img {
+    object-fit: cover;
+    width: 40px;
+    height: 40px
+}
+p {
+    color: white;
+}
+.accept-cookies {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
