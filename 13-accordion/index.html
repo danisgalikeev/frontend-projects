@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section class="faq" aria-label="FAQ">
+    <div class="faq__container">
+        <h2 class="faq__title">FAQ</h2>
+
+        <div class="accordion" data-accordion>
+            <div class="accordion__item">
+                <button class="accordion__header" type="button" aria-expanded="false">
+                    <span class="accordion__question">Как работает аккордеон?</span>
+                    <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="accordion__panel" role="region" aria-hidden="true">
+                    <div class="accordion__content">
+                        Нажимаешь на вопрос — блок раскрывается. Повторный клик — закрывается.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <button class="accordion__header" type="button" aria-expanded="false">
+                    <span class="accordion__question">Можно ли открыть несколько пунктов?</span>
+                    <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="accordion__panel" role="region" aria-hidden="true">
+                    <div class="accordion__content">
+                        По умолчанию — один. Но можно отключить это в JS одной строкой.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <button class="accordion__header" type="button" aria-expanded="false">
+                    <span class="accordion__question">Есть анимация?</span>
+                    <span class="accordion__icon" aria-hidden="true"></span>
+                </button>
+
+                <div class="accordion__panel" role="region" aria-hidden="true">
+                    <div class="accordion__content">
+                        Да, высота раскрытия анимируется через max-height.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
