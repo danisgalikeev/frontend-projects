@@ -1,4 +1,4 @@
-# Basic HTML website
+# Personal Portfolio (Basic HTML Website)
 
 This project is focused on building responsive website.
 
